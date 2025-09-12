@@ -59,6 +59,17 @@ html{
 .container-header header nav ul li a:hover{
     color: red;
 }
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    margin-left: auto;
+    border-radius: 20px;
+}
 .sobremi{
     background-size: cover;
     background-position: center;
@@ -159,3 +170,44 @@ footer .redes a:hover{
     border-color: red;
     transform: scale(1.1);
 }
+
+/*Responsive menu navar*/
+@media (max-width:768px) {
+    #menu-toggle {
+        display: none;
+    }
+}
+
+.menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: red; /*color de tu logo*/
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300;
+
+}
+/*menu oculto*/
+.container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: red (0,0,0,0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px red (0,0,0,0.4);
+    z-index: 250;
+}
+
+/*mostrar menu al activar*/
+#menu-toggle:checked ~ .nav ul {
+    display: flex;
+}
+
+
+
