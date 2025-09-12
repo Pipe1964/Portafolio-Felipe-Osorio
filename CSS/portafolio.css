@@ -23,48 +23,73 @@ html {
     scroll-behavior: smooth;
 }
 
+/* CSS */
 .container-header {
-    background: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+  background: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
+/* header flex para logo (izq) y nav (der) */
 .container-header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
+/* logo */
 .container-header header .logo a {
-    font-family: 'righteous', cursive;
-    font-size: 36px;
-     color: red;
-    text-decoration: none;
+  font-family: 'righteous', cursive;
+  font-size: 34px;
+  color: red (0, 0, 255);
+  text-decoration: none;
 }
 
-.container-header header ul {
-    display: flex;
-    list-style: none;
+/* --> REGLAS IMPORTANTES para que el menú sea horizontal */
+.container-header header nav {
+  margin-left: auto; /* empuja el nav a la derecha */
+}
+
+.container-header header nav ul {
+  display: flex;                /* fila flexible */
+  flex-direction: row;         /* asegurar fila */
+  flex-wrap: nowrap;           /* que no bajen a otra línea */
+  align-items: center;         /* centrar vertical */
+  gap: 48px;                   /* espacio entre items (ajusta) */
+  margin: 0;                   /* quitar márgenes por defecto */
+  padding: 0;                  /* quitar padding por defecto */
+  list-style: none;
+}
+
+.container-header header nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container-header header nav ul li a {
-    text-align: center;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+  display: inline-block;       /* evita que ocupen toda la línea */
+  color: #fff;
+  text-align: center;
+  padding: 6px 4px;
+  text-decoration: none;
+  transition: color .25s;
+  font-size: 18px;             /* ajustar tamaño si quieres */
 }
 
 .container-header header nav ul li a:hover {
-    color: red
+  color: red;
 }
+
+
+
 /* BODY*/
 
 .img{
@@ -133,7 +158,7 @@ footer .redes{
     margin-bottom: 20px;
 }
 footer .redes a{
-    color: red;
+    color: #fff;
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 100%;
