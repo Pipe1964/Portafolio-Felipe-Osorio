@@ -30,7 +30,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../img/fondo.jpg);
+    url(../IMG/imagenes/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,9 +71,9 @@ html {
 
 /* logo */
 .container-header header .logo a {
-  font-family: 'righteous', cursive;
+  font-family: 'righteous', ;
   font-size: 34px;
-  color: red (0, 0, 255);
+  color: red ;
   text-decoration: none;
 }
 
@@ -342,5 +342,66 @@ nav ul {
   section {
     flex-direction: column; 
     align-items: center;    
+  }
+}
+
+
+
+#menu-toggle{
+    display: none ;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: auto;
+}
+/*RESPONSIVE BARRA DE NAVEGACION*/
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: none !important;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: red; 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300;
+  }
+
+  .container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 250;
+  }
+
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+
+  .container-header header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .container-header header .nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
   }
 }

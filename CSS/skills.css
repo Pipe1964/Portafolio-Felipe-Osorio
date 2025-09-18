@@ -1,4 +1,3 @@
-
 @import
 url('https://fonts.googleapis.com/css2?fmily=righteous&family=work+sans:wght@100;300;400;600;800&display=swap');
 body{
@@ -12,146 +11,166 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 *{
-    box-sizing: border-box;
-    font-family: "Word Sans", sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: "word Sans, sans-serif";
+  margin: 0;
+  padding: 0;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
+
 }
-.container-header{
-    background: black;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
+
+.container-header {
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
-.container-header header{
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: spacebe-tween;
-    align-items: center;
-    padding: 15px 20px;
+
+
+.container-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
 }
-.container-header header .logo a{
-    font-family: 'Righteos', cursive;
-    font-size: 36px;
-    color: red;
-    text-decoration: none;
+
+
+.container-header header .logo a {
+  font-family: 'Righteos';
+  font-size: 34px;
+  color: red;
+  text-decoration: none;
 }
-.container-header header ul{
-    display: flex;
-    list-style: none;
+
+
+.container-header header ul {
+  display: flex;
+  list-style: none;
 }
-.container-header header nav ul li a{
-    text-align: center;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
+
+
+.container-header header nav ul li a {
+  text-align: center;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
 }
-.container-header header nav ul li a:hover{
-    color: red;
+
+
+.container-header header nav ul li a:hover {
+  color: red;
 }
-section{
-    margin-top: 0px;
+
+section {
+    margin-top: 80px;
 }
-.skills{
+
+.skills {
     color: #fff;
     padding: 50px 20px;
 }
 
-.skills .container-section{
+.skills .container-section {
     max-width: 1199px;
     margin: auto;
 }
-.skills h2{
+
+.skills h2 {
     font-size: 48px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    padding: 27px 0;
+    padding: 20px 0;
 }
-.skills .fila{
+
+.skills .fila {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
 }
-.skills .fila .col{
+
+.skills .fila .col {
     flex: 1;
     min-width: 300px;
     padding: 0 20px;
 }
-.skills .fila .col h3{
+
+.skills .fila .col h3 {
     font-size: 28px;
     font-family: 'Righteous', cursive;
     margin-bottom: 25px;
     text-align: center;
 }
-.skills .skills span{
+
+.skills .skills span {
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
-.skills .skills .barra-skills{
+
+.skills .skills .barra-skills {
     height: 8px;
     width: 80%;
     background-color: #f0f3f7;
     position: relative;
     margin-bottom: 30px;
 }
-.skills .skills .progreso{
-    background-color: red (0, 34, 252);
+
+.skills .skills .progreso {
+    background-color: red;
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
 }
 
-.skills .skills .barra-skills span{
+.skills .skills .barra-skills span {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: red (0, 0, 255);
+    background-color: red;
     border-radius: 50%;
     line-height: 40px;
     text-align: center;
     top: -17px;
     right: -15px;
-    font-size: 14px;
-}
-.skills .barra-skills .progreso.javaScript {
-  background: red;
-  color: white;
-  font-weight: bold;
-  border-radius: 1px;
-  animation: javaScript 3s forwards;
 }
 
-@keyframes javaScript {
-  0% { width: 0%; }
-  100% { width: 75%; }
+.skills .barra-skills .progreso.javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
 }
 
+@keyframes javascript {
+    0% { width: 0%; }
+    100% { width: 75%; }
+}
 
-footer{
-    background-color: rgb(0, 0, 0);
+footer {
+    background-color: black;
     color: #fff;
-    padding: 30px 50px ;
+    padding: 15px 0;
     text-align: center;
     position: relative;
     width: 100%;
-    margin-top: 0%; /ARREGLAR ESTOOO/
 }
-footer .redes{
+
+footer .redes {
     margin-bottom: 20px;
 }
-footer .redes a{
+
+footer .redes a {
     color: #fff;
     display: inline-block;
     border: 1px solid #fff;
@@ -163,65 +182,270 @@ footer .redes a{
     font-size: 20px;
     transition: all 0.3s ease;
 }
-footer .redes a:hover{
+
+footer .redes a:hover {
     background: red;
     border-color: red;
     transform: scale(1.1);
 }
-/* Asegúrate de que esta regla cargue después de otras reglas de header */
-.container-header header {
-  
-  justify-content: space-between; /* logo izquierda, nav derecha */
- 
+
+@media (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .container-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .sobremi {
+    padding: 80px 15px;
+  }
+
+  .sobremi h2 {
+    font-size: 36px;
+  }
+
+  .sobremi .fila {
+    flex-direction: column;
+  }
+
+  .sobremi .fila .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sobremi .fila .col h3 {
+    font-size: 24px;
+  }
+
+  .sobremi .fila .col ul strong {
+    width: auto;
+    text-align: left;
+  }
+
+  .sobremi .fila .col .container-interes {
+    justify-content: center;
+  }
+
+  .sobremi .fila .col .container-interes .interes {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-header header .logo a {
+    font-size: 28px;
+  }
+
+  .sobremi h2 {
+    font-size: 28px;
+  }
+
+  .sobremi .container-section p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sobremi .fila .col h3 {
+    font-size: 20px;
+  }
 }
 
 
-/*RESPONSIVE*/
-@media (max-width: 768px){
-    /Header/
+@media screen and (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .container-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .skills {
+    padding: 40px 15px;
+  }
+
+  .skills h2 {
+    font-size: 36px;
+  }
+
+  .skills .fila {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills .fila .col {
+    padding: 0;
+    min-width: 100%;
+  }
+
+  .skills .fila .col h3 {
+    font-size: 24px;
+  }
+
+  .skills .skills .barra-skills {
+    width: 100%;
+  }
+
+  .skills .skills .barra-skills span {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    top: -15px;
+    right: -12px;
+  }
+
+  footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 8px;
+  }
+}
+
+
+
+/* Tablets y moviles (pantallas menores a 768px) */
+@media screen and (max-width: 768px) {
     .container-header header {
         flex-direction: column;
-        padding: 10px;
-    }
-    .container-header header .logo a {
-        font-size: 28px;
-    }
-    /*SESION INICIO*/
-    .inicio{
-        padding-top: 100px;
-        text-align: center;
-    }
-    .inicio .container-banner{
-        max-width: 90px;
-        padding: 15px;
-    }
-    .inicio .container-banner h1{
-        font-size: 28px;
-    }
-    .inicio .container-banner h2{
-        font-size: 14px;
-    }
-    /*REDES SOCIALES*/
-    .container-banner .redes {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    footer .redes a{
-        margin: 10px;
-    }
+        align-items: center; 
 }
 
-@media (max-width: 480px){
-    .container-header header .logo a{
-        font-size: 22px;
-    }
-    .inicio .container-banner h1{
-        font-size: 22px;
-    }
-    .inicio .container-banner h2{
-        font-size: 12px;
-    }
-    footer {
-        padding: 10px 0;
-    }
+.container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.container-header header nav ul li {
+    margin: 10px 0;
+}
+
+.skills {
+    padding: 40px 15px;
+}
+
+.skills h2 {
+    font-size: 36px;
+}
+
+.skills .fila {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills .fila .col {
+    padding: 0;
+    min-width: 100%;
+}
+
+.skills .fila .col h3 {
+    font-size: 24px;
+}
+}
+
+.skills .skills .barra-skills span {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    top: -15px;
+    right: -12px;
+}
+
+footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 8px;
+}
+
+
+
+#menu-toggle{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: red;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: auto;
+}
+/*RESPONSIVE BARRA DE NAVEGACION*/
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: red; 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300;
+  }
+
+  .container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 250;
+  }
+
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+
+  .container-header header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .container-header header .nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+  }
 }
